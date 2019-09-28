@@ -1,0 +1,100 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.tabs.tabs-transparent .tab a {
+    color: #000;
+}
+
+.rowz {
+    border-style: solid;
+    border-color: black;
+}
+
+#landing {
+    height: 80vh;
+    background-color: #A4C2A5;
+}
+
+.card {
+    box-shadow: none;
+}
+
+.nav-extended {
+    background-color: #F7F7F7;
+}
+
+.nav-extended a {
+    color: black;
+}
+
+#landing-row {
+    margin-top: 11vh;
+}
+
+#photo {
+    height: 427px;
+    overflow: hidden;
+}
+
+#description {
+    height: 427px;
+    overflow: hidden;
+}
+
+.page-footer {
+    background-color: #F7F7F7;
+    color: #000;
+}
+
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.middle-indicator {
+    position: absolute;
+    top: 50%;
+}
+
+.middle-indicator-text {
+    font-size: 4.2rem;
+}
+
+a.middle-indicator-text {
+    color: white !important;
+}
+
+.content-indicator {
+    width: 64px;
+    height: 64px;
+    background: none;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.indicators {
+    visibility: hidden;
+}
