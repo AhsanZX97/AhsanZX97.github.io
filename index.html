@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
 </head>
 
@@ -32,113 +34,179 @@
 
     <!--Landing Screen-->
     <div class="section" id="landing">
-        <div class="center">
-            <div class="carousel carousel-slider center" data-indicators="true" style="min-height: 78vh;">
-                <div class="carousel-fixed-item center middle-indicator">
 
-                    <div class="left">
-                        <a href=""
-                            class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator">
-                            <i class="material-icons left  middle-indicator-text">chevron_left</i>
-                        </a>
+
+        <div class="carousel carousel-slider center" data-indicators="true" style="min-height: 78vh;">
+
+            
+            <div class="carousel-item" href="#one!">
+
+                <div class="container row" id="landing-row">
+                    <div class="col sl2 ml2 l4">
+                        <div class="card" id="photo">
+                            <div class="card-image">
+                                <img src="img/myFace.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>
+                                    <b>Ahsan Zia</b>
+                                    <br />
+                                    Graduate, major in the art of being a twat
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a>links</a>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="right">
-                        <a href=""
-                            class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator">
-                            <i class="material-icons right middle-indicator-text">chevron_right</i>
-                        </a>
+                    <div class="col sl2 ml2 l8">
+                        <div class="card" id="description">
+                            <div class="card-content">
+                                <span class="card-title center">About Me</span>
+                                <p class="flow-text">Recently graduated from the University of Surrey in Computer
+                                    Science
+                                    and keen to work and learn more about software development having built a lot of
+                                    software whilst in University. I’m experienced in languages such as Java,
+                                    JavaScript,
+                                    Python and Ruby while in University and I’m also easily able to pick up new
+                                    technology.
+                                    My current goal is to improve my problem-solving skill by working on projects
+                                    provided
+                                    in a commercial environment. </p>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
 
-                <div class="carousel-item" href="#one!">
-                    
-                    <div class="container row" id="landing-row">
-                        <div class="col sl2 ml2 l4">
-                            <div class="card" id="photo">
-                                <div class="card-image">
-                                    <img src="prick.jpg">
+            </div>
+
+            <div class="carousel-item" href="#two!">
+
+                <div class="container" id="landing-row">
+                    <div class="card" id="Skills">
+                        <div class="card-content">
+                            <span class="card-title center">Skills</span>
+                            <div class="single-item">
+                                <div>
+                                    <div id="barchart_values" style="width: 120vh; height: 40vh;"></div>
                                 </div>
-                                <div class="card-content">
-                                    <p>
-                                        <b>Ahsan Zia</b>
-                                        <br />
-                                        Graduate, major in the art of being a twat
-                                    </p>
+                                <div>
+                                    <div id="barchart_values2" style="width: 120vh; height: 40vh;"></div>
                                 </div>
-                                <div class="card-action">
-                                    <a>links</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col sl2 ml2 l8">
-                            <div class="card" id="description">
-                                <div class="card-content">
-                                    <span class="card-title center">About Me</span>
-                                    <p class="flow-text">Recently graduated from the University of Surrey in Computer
-                                        Science
-                                        and keen to work and learn more about software development having built a lot of
-                                        software whilst in University. I’m experienced in languages such as Java,
-                                        JavaScript,
-                                        Python and Ruby while in University and I’m also easily able to pick up new
-                                        technology.
-                                        My current goal is to improve my problem-solving skill by working on projects
-                                        provided
-                                        in a commercial environment. </p>
+                                <div>
+                                    <div id="barchart_values3" style="width: 120vh; height: 40vh;"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
+            </div>
 
-                <div class="carousel-item" href="#two!">
-                    
-                    <div class="container row" id="landing-row">
-                        <div class="col sl2 ml2 l4">
-                            <div class="card" id="photo">
-                                <div class="card-image">
-                                    <img src="prick.jpg">
-                                </div>
+            <div class="carousel-item" href="#three!">
+
+                <div class="container">
+
+                    <div class="row">
+                        <div id="landing-row">
+                            <div class="card" id="Skills">
                                 <div class="card-content">
-                                    <p>
-                                        <b>Ahsan Zia</b>
-                                        <br />
-                                        Graduate, major in the art of being a twat
-                                    </p>
-                                </div>
-                                <div class="card-action">
-                                    <a>links</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col sl2 ml2 l8">
-                            <div class="card" id="description">
-                                <div class="card-content">
-                                    <span class="card-title center">About Me</span>
-                                    <p class="flow-text">Recently graduated from the University of Surrey in Computer
-                                        Science
-                                        and keen to work and learn more about software development having built a lot of
-                                        software whilst in University. I’m experienced in languages such as Java,
-                                        JavaScript,
-                                        Python and Ruby while in University and I’m also easily able to pick up new
-                                        technology.
-                                        My current goal is to improve my problem-solving skill by working on projects
-                                        provided
-                                        in a commercial environment. </p>
+                                    <span class="card-title center">Projects</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col sl2 ml2 l4">
+                            <div class="card" id="projects">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="img/ruby project.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Ruby On Rails Project<i
+                                            class="material-icons right">more_vert</i></span>
+                                    <p><a href="#">Link to Github</a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Ruby On Rails Project<i
+                                            class="material-icons right">close</i></span>
+                                    <p>Created a football league generator in my 2nd year of University. Purpose was for
+                                        users to create their own sunday league football using CRUD. Created using Ruby
+                                        On Rails, jquery and sql.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col sl2 ml2 l4">
+                            <div class="card" id="projects">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="img/java project.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Java Spring Project<i
+                                            class="material-icons right">more_vert</i></span>
+                                    <p><a href="#">Link to Github</a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Java Spring Project<i
+                                            class="material-icons right">close</i></span>
+                                    <p>Created a football league generator in my 3nd year of University in a team.
+                                        Purpose was for users to create their own sunday league football using CRUD.
+                                        Created using Spring Framework with javascript using google maps API.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col sl2 ml2 l4">
+                            <div class="card" id="projects">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="img/php project.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">PHP AI Project<i
+                                            class="material-icons right">more_vert</i></span>
+                                    <p><a href="#">Link to Github</a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">PHP AI Project<i
+                                            class="material-icons right">close</i></span>
+                                    <p>Made a web application that performs Meta-Interpretive Learning and neural
+                                        network algorithm. Created using HTML,CSS,PHP,Javascript and SQL.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
 
                 </div>
 
             </div>
 
+            <div class="">
+
+                <div class="left">
+                    <a href=""
+                        class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator carousel-fixed-item middle-indicator">
+                        <i class="material-icons left  middle-indicator-text">chevron_left</i>
+                    </a>
+                </div>
+
+                <div class="right">
+                    <a href=""
+                        class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator middle-indicator rightArrow">
+                        <i class="material-icons right middle-indicator-text">chevron_right</i>
+                    </a>
+                </div>
+
+            </div>          
+
+
         </div>
+
+
     </div>
-    
+    </div>
+
 
     <!--Footer-->
     <footer class="section page-footer">
@@ -148,12 +216,12 @@
     </footer>
 
     <!-- Compiled and minified JavaScript -->
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/968f73a78a.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="javascript.js"></script>
 
 </body>

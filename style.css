@@ -98,3 +98,21 @@ a.middle-indicator-text {
 .indicators {
     visibility: hidden;
 }
+
+.card {
+
+}
+.slick-prev:before, .slick-next:before { 
+    color:black !important;
+}
+
+#projects {
+    height: 34vh;
+}
+
+.rightArrow {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    z-index: 1;
+}
