@@ -24,8 +24,8 @@
         </div>
         <div class="nav-content container">
             <ul class="tabs tabs-transparent">
-                <li class="tab"><a href="#">About Me</a></li>
-                <li class="tab"><a href="#">Skills</a></li>
+                <li class="tab"><a class="active" href="#">About Me</a></li>
+                <li class="tab" id = "carousel-two"><a href="#">Skills</a></li>
                 <li class="tab"><a href="#">Projects</a></li>
                 <li class="tab"><a href="#">Contact Us</a></li>
             </ul>
@@ -38,8 +38,7 @@
 
         <div class="carousel carousel-slider center" data-indicators="true" style="min-height: 78vh;">
 
-            
-            <div class="carousel-item" href="#one!">
+            <div class="carousel-item carousel-active" href="#one!" id = "carousel-one">
 
                 <div class="container row" id="landing-row">
                     <div class="col sl2 ml2 l4">
@@ -77,10 +76,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
-            <div class="carousel-item" href="#two!">
+            <div class="carousel-item" href="#two!" id = "carousel-one">
 
                 <div class="container" id="landing-row">
                     <div class="card" id="Skills">
@@ -105,7 +103,6 @@
             <div class="carousel-item" href="#three!">
 
                 <div class="container">
-
                     <div class="row">
                         <div id="landing-row">
                             <div class="card" id="Skills">
@@ -124,7 +121,7 @@
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-4">Ruby On Rails Project<i
                                             class="material-icons right">more_vert</i></span>
-                                    <p><a href="#">Link to Github</a></p>
+                                    <p><a href="https://github.com/AhsanZX97/Rails-Coursework">Link to Github</a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Ruby On Rails Project<i
@@ -144,7 +141,7 @@
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-4">Java Spring Project<i
                                             class="material-icons right">more_vert</i></span>
-                                    <p><a href="#">Link to Github</a></p>
+                                    <p><a href="https://github.com/AhsanZX97/Spring-Coursework">Link to Github</a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Java Spring Project<i
@@ -164,7 +161,7 @@
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-4">PHP AI Project<i
                                             class="material-icons right">more_vert</i></span>
-                                    <p><a href="#">Link to Github</a></p>
+                                    <p><a href="https://github.com/AhsanZX97/PHP-AI-project">Link to Github</a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">PHP AI Project<i
@@ -174,31 +171,71 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
-
                 </div>
+            </div> 
 
+            <div class="carousel-item" href="#four!">
+                
+                <div class="container" id="landing-row">
+                    <div class="card" id="ContactMe">
+                        <div class="card-content">
+                            <span class="card-title center">Contact Me</span>
+                            <div class="row">
+                                <div class="input-field col m6 s12">
+                                    <input id="first_name" type="text" class="validate">
+                                    <label for="first_name">First Name</label>
+                                </div>
+                                <div class="input-field col m6 s12">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col m6 s12">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="email" type="email" class="validate" required>
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="input-field col m6 s12">
+                                    <i class="material-icons prefix">phone</i>
+                                    <input id="number" type="text" class="validate">
+                                    <label for="number">Number</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="message" class="materialize-textarea"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col m12">
+                                    <p class="center"><button class="btn btn-large waves-effect waves-light"
+                                            type="button" name="action">Send Message<i
+                                                class="material-icons right">send</i></button></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="">
 
-                <div class="left">
-                    <a href=""
-                        class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator carousel-fixed-item middle-indicator">
-                        <i class="material-icons left  middle-indicator-text">chevron_left</i>
-                    </a>
-                </div>
+            <div class="left">
+                <a href=""
+                    class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator carousel-fixed-item middle-indicator">
+                    <i class="material-icons left  middle-indicator-text">chevron_left</i>
+                </a>
+            </div>
 
-                <div class="right">
-                    <a href=""
-                        class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator middle-indicator rightArrow">
-                        <i class="material-icons right middle-indicator-text">chevron_right</i>
-                    </a>
-                </div>
+            <div class="right">
+                <a href=""
+                    class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator middle-indicator rightArrow">
+                    <i class="material-icons right middle-indicator-text">chevron_right</i>
+                </a>
+            </div>
 
-            </div>          
 
 
         </div>

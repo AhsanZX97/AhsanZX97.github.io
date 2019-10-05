@@ -1,15 +1,30 @@
+var activeScreen = 1;
+
 // start carrousel
 $('.carousel.carousel-slider').carousel({
    fullWidth: true,
    indicators: false
 });
 
+/*$('.tab').click(function (e) {
+   e.preventDefault();
+   e.stopPropagation();
+   var x = 2;
+   while(x != activeScreen) {
+      var dir = x - activeScreen;
+      if(dir > 0) $('.moveNextCarousel').click();
+      else $('.movePrevCarousel').click();
+   }
+});*/
 
 // move next carousel
 $('.moveNextCarousel').click(function (e) {
    e.preventDefault();
    e.stopPropagation();
    $('.carousel').carousel('next');
+   if(activeScreen == 4) activeScreen = 1;
+   else activeScreen++;
+   console.log(activeScreen);
 });
 
 // move prev carousel
@@ -17,6 +32,9 @@ $('.movePrevCarousel').click(function (e) {
    e.preventDefault();
    e.stopPropagation();
    $('.carousel').carousel('prev');
+   if(activeScreen == 1) activeScreen = 4;
+   else activeScreen--;
+   console.log(activeScreen);
 });
 
 google.charts.load("current", { packages: ["corechart"] });
@@ -80,7 +98,7 @@ function drawChart() {
    };
 
    var chart2 = new google.visualization.BarChart(document.getElementById("barchart_values2"));
-   chart2.draw(view2,options2);
+   chart2.draw(view2, options2);
 
    var data3 = google.visualization.arrayToDataTable([
       ["Element", "Density", { role: "style" }],
@@ -109,9 +127,13 @@ function drawChart() {
    };
 
    var chart3 = new google.visualization.BarChart(document.getElementById("barchart_values3"));
-   chart3.draw(view3,options3);
+   chart3.draw(view3, options3);
 }
 
 $(".single-item").slick({
-	dots: true
+   dots: true
+});
+
+$(document).ready(function () {
+   $('.tabs').tabs();
 });

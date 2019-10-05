@@ -32,7 +32,9 @@ body {
 .nav-extended {
     background-color: #F7F7F7;
 }
-
+nav {
+    background-color: #F7F7F7;
+}
 .nav-extended a {
     color: black;
 }
@@ -115,4 +117,16 @@ a.middle-indicator-text {
     right: 0;
     bottom: 20px;
     z-index: 1;
+}
+
+.tabs.tabs-transparent .tab a:hover, .tabs.tabs-transparent .tab a.active {
+    color: black;
+}
+
+.tabs .indicator{
+    background-color:black !important;/*your color*/
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: #F7F7F7;
 }
