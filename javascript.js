@@ -1,41 +1,42 @@
 var activeScreen = 1;
+$(document).ready(function () {
+   $('.tabs').tabs();
 
+   $('.tab').click(function (e) {
+      //if($(this).hasClass('disabled')) return;
+      e.preventDefault();
+      /*$('.tab').addClass('disabled');
+      $(this).removeClass('disabled');
+      var x = $(this).index() + 1;
+      var dir = x - activeScreen;*/
+      var id = $(this).attr('id');
+      var num = parseInt(id[id.length-1]) - 1;
+      console.log(num);
+      $('.carousel').carousel('set', num);
+   });
+
+   function move(dir) {
+      if (dir > 0) {
+         $('.carousel').carousel('set', dir);
+         activeScreen += dir;
+      }
+      else {
+         var reverse = -Math.abs(dir);
+         $('.carousel').carousel('set', reverse);
+         activeScreen += reverse;
+      }
+      
+   }
+});
 // start carrousel
 $('.carousel.carousel-slider').carousel({
    fullWidth: true,
    indicators: false
 });
 
-/*$('.tab').click(function (e) {
-   e.preventDefault();
-   e.stopPropagation();
-   var x = 2;
-   while(x != activeScreen) {
-      var dir = x - activeScreen;
-      if(dir > 0) $('.moveNextCarousel').click();
-      else $('.movePrevCarousel').click();
-   }
-});*/
 
-// move next carousel
-$('.moveNextCarousel').click(function (e) {
-   e.preventDefault();
-   e.stopPropagation();
-   $('.carousel').carousel('next');
-   if(activeScreen == 4) activeScreen = 1;
-   else activeScreen++;
-   console.log(activeScreen);
-});
 
-// move prev carousel
-$('.movePrevCarousel').click(function (e) {
-   e.preventDefault();
-   e.stopPropagation();
-   $('.carousel').carousel('prev');
-   if(activeScreen == 1) activeScreen = 4;
-   else activeScreen--;
-   console.log(activeScreen);
-});
+
 
 google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(drawChart);
@@ -134,6 +135,3 @@ $(".single-item").slick({
    dots: true
 });
 
-$(document).ready(function () {
-   $('.tabs').tabs();
-});
