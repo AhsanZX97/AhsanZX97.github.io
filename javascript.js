@@ -1,32 +1,5 @@
-var activeScreen = 1;
 $(document).ready(function () {
    $('.tabs').tabs();
-
-   $('.tab').click(function (e) {
-      //if($(this).hasClass('disabled')) return;
-      e.preventDefault();
-      /*$('.tab').addClass('disabled');
-      $(this).removeClass('disabled');
-      var x = $(this).index() + 1;
-      var dir = x - activeScreen;*/
-      var id = $(this).attr('id');
-      var num = parseInt(id[id.length-1]) - 1;
-      console.log(num);
-      $('.carousel').carousel('set', num);
-   });
-
-   function move(dir) {
-      if (dir > 0) {
-         $('.carousel').carousel('set', dir);
-         activeScreen += dir;
-      }
-      else {
-         var reverse = -Math.abs(dir);
-         $('.carousel').carousel('set', reverse);
-         activeScreen += reverse;
-      }
-      
-   }
 });
 // start carrousel
 $('.carousel.carousel-slider').carousel({
@@ -35,7 +8,13 @@ $('.carousel.carousel-slider').carousel({
 });
 
 
-
+$('.tab').click(function (e) {
+   e.preventDefault();
+   var id = $(this).attr('id');
+   var num = parseInt(id[id.length-1]) - 1;
+   console.log(num);
+   $('.carousel').carousel('set', num);
+});
 
 
 google.charts.load("current", { packages: ["corechart"] });
