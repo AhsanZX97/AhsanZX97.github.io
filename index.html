@@ -24,10 +24,10 @@
         </div>
         <div class="nav-content container">
             <ul class="tabs tabs-transparent">
-                <li class="tab" id = "tab_1"><a href="#">About Me</a></li>
-                <li class="tab" id = "tab_2"><a href="#">Skills</a></li>
-                <li class="tab" id = "tab_3"><a href="#">Projects</a></li>
-                <li class="tab" id = "tab_4"><a href="#">Contact Us</a></li>
+                <li class="tab" id="tab_1"><a href="#">About Me</a></li>
+                <li class="tab" id="tab_2"><a href="#">Skills</a></li>
+                <li class="tab" id="tab_3"><a href="#">Projects</a></li>
+                <li class="tab" id="tab_4"><a href="#">Contact Us</a></li>
             </ul>
         </div>
     </nav>
@@ -44,7 +44,7 @@
                     <div class="col sl2 ml2 l4">
                         <div class="card" id="photo">
                             <div class="card-image">
-                                <img src="img/myFace.jpg" id ="cardPic">
+                                <img src="img/myFace.jpg" id="cardPic">
                             </div>
                             <div class="card-content">
                                 <p>
@@ -84,7 +84,7 @@
                 </div>
             </div>
 
-            <div class="carousel-item" href="#two!" id = "two!">
+            <div class="carousel-item" href="#two!" id="two!">
 
                 <div class="container" id="landing-row">
                     <div class="card" id="Skills">
@@ -179,49 +179,51 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
 
             <div class="carousel-item" href="#four!">
-                
+
                 <div class="container" id="landing-row">
                     <div class="card" id="ContactMe">
                         <div class="card-content">
                             <span class="card-title center">Contact Me</span>
-                            <div class="row">
-                                <div class="input-field col m6 s12">
-                                    <input id="first_name" type="text" class="validate">
-                                    <label for="first_name">First Name</label>
+                            <form action="https://formspree.io/xdqpzozm" method="POST">
+                                <div class="row">
+                                    <div class="input-field col m6 s12">
+                                        <input id="first_name" type="text" class="validate" name="first_name">
+                                        <label for="first_name">First Name</label>
+                                    </div>
+                                    <div class="input-field col m6 s12">
+                                        <input id="last_name" type="text" class="validate" name="last_name">
+                                        <label for="last_name">Last Name</label>
+                                    </div>
                                 </div>
-                                <div class="input-field col m6 s12">
-                                    <input id="last_name" type="text" class="validate">
-                                    <label for="last_name">Last Name</label>
+                                <div class="row">
+                                    <div class="input-field col m6 s12">
+                                        <i class="material-icons prefix">email</i>
+                                        <input id="email" type="email" class="validate" name="_replyto" required>
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="input-field col m6 s12">
+                                        <i class="material-icons prefix">phone</i>
+                                        <input id="number" type="text" class="validate" name="number">
+                                        <label for="number">Number</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col m6 s12">
-                                    <i class="material-icons prefix">email</i>
-                                    <input id="email" type="email" class="validate" required>
-                                    <label for="email">Email</label>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="message" class="materialize-textarea" name="message"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
                                 </div>
-                                <div class="input-field col m6 s12">
-                                    <i class="material-icons prefix">phone</i>
-                                    <input id="number" type="text" class="validate">
-                                    <label for="number">Number</label>
+                                <div class="row">
+                                    <div class="col m12">
+                                        <p class="center"><button class="btn btn-large waves-effect waves-light"
+                                                type="submit" name="action">Send Message<i
+                                                    class="material-icons right">send</i></button></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <textarea id="message" class="materialize-textarea"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col m12">
-                                    <p class="center"><button class="btn btn-large waves-effect waves-light"
-                                            type="button" name="action">Send Message<i
-                                                class="material-icons right">send</i></button></p>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
