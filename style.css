@@ -32,9 +32,11 @@ body {
 .nav-extended {
     background-color: #F7F7F7;
 }
+
 nav {
     background-color: #F7F7F7;
 }
+
 .nav-extended a {
     color: black;
 }
@@ -97,15 +99,9 @@ a.middle-indicator-text {
     border-radius: 50px;
 }
 
-.indicators {
-    visibility: hidden;
-}
-
-.card {
-
-}
-.slick-prev:before, .slick-next:before { 
-    color:black !important;
+.slick-prev:before,
+.slick-next:before {
+    color: black !important;
 }
 
 #projects {
@@ -119,14 +115,17 @@ a.middle-indicator-text {
     z-index: 1;
 }
 
-.tabs.tabs-transparent .tab a:hover, .tabs.tabs-transparent .tab a.active {
+.tabs.tabs-transparent .tab a:hover,
+.tabs.tabs-transparent .tab a.active {
     color: black;
 }
 
-.tabs .indicator{
-    background-color:black !important;/*your color*/
+.tabs .indicator {
+    background-color: black !important;
+    /*your color*/
 }
 
-.tabs .tab a:focus, .tabs .tab a:focus.active {
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
     background-color: #F7F7F7;
 }
